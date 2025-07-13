@@ -1,0 +1,246 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+html {
+	font-size: 10px;
+}
+
+header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 3rem 0;
+	z-index: 999;
+}
+
+.container {
+	max-width: 140rem;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+.navbar {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	
+}
+.nav-logo {
+	font-size: 15rem;
+	font-weight: 800;
+	text-decoration: none;
+	color: #fff;
+}
+
+.nav-list {
+	display: flex;
+	list-style: none;
+}
+
+.navbar-item {
+	margin-left: 2.5rem;
+}
+
+.nav-link {
+	text-decoration: none;
+	font-size: 1.4rem;
+	font-weight: 800;
+	letter-spacing: 1px;
+	color: #fff;
+	transition: color 0.5s;
+}
+
+.nav-link:hover {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+/* Even spacing between nav items */
+.nav-custom-gap .nav-item {
+  margin-left: 20px;
+}
+
+/* Optional: Better spacing on mobile view */
+@media (max-width: 576px) {
+  .nav-custom-gap .nav-item {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.shopping-bag {
+	display: inline-block;
+	font-size: 1.8rem;
+	color: #fff;
+	cursor: pointer;
+	transform: translateX(-2rem);
+}
+.shopping-bag i {
+	display: inline-block;
+	font-size: 1.8rem;
+	color: #fff;
+	cursor: pointer;
+	transform: translateX(-2rem);
+}
+
+.bag-item-count {
+	width: 2rem;
+	height: 2rem;
+	background-color: #7d1eff;
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 1.2rem;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: -1rem;
+	right: -2rem;
+}
+.hero {
+	width: 100%;
+	height: 100vh;
+	background-color: #2b2b2b;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.circle {
+	position: absolute;
+}
+.circle-small {
+	top: -15rem;
+	left: -21rem;
+}
+
+.circle-large {
+	bottom: -80rem;
+	right: -60rem;
+}
+.content {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	position: relative;
+	z-index: 10;
+}
+.text {
+	color: #fff;
+	flex: 1;
+	text-transform: uppercase;
+}
+
+.text h1 {
+	font-size: calc(1rem + 4vw);
+	font-weight: 800;
+	line-height: 1.2;
+}
+
+.text h1 span {
+	color: #7d1eff !important;
+}
+
+.text h5 {
+	font-size: 1.9rem;
+	font-weight: 800;
+	margin: 8rem 0 4rem 0;
+}
+
+.text p {
+	text-transform: lowercase;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	margin-bottom: 2rem;
+}
+
+.cta {
+	display: inline-block;
+	font-size: 1.4rem;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 800;
+	padding: 1.5rem 3rem;
+	background-color: #7d1eff;
+	transition: background-color 0.5s;
+}
+
+.cta:hover {
+		background-color: #7d1eff;
+}
+
+.watch-wrapper {
+	flex: 0 0 45%;
+}
+
+.overlay {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	display: flex;
+}
+
+.layer {
+	background-color: #b2aabf;
+}
+
+.layer-1 {
+	flex: 1;
+}
+
+.layer-2 {
+	flex: 1;
+}
+
+.layer-3 {
+	flex: 1;
+}
+
+/* image */
+.img-front{
+	height: 50rem;
+	border-radius: 2rem;
+	margin-left: 20rem;
+	margin-top: 2rem;
+}
+
+
+/* Apply to body or html */
+.hero {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-y: auto;
+  
+  /* Background Styling */
+  background: url('your-background-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #212121; /* Fallback color */
+}
+
+/* Optional: Ensure content has space to scroll */
+.content {
+  padding: 50px;
+  color: white; /* Or dark depending on background */
+}
+
+.card{
+    margin-top: 40rem !important;
+    width: 40%  !important;
+}
+
+.last-line{
+    font-style: italic;
+}
