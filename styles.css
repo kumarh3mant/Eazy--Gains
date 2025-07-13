@@ -214,5 +214,84 @@ header {
 }
 
 
+/* === Responsive Styles === */
+@media (max-width: 768px) {
+  html {
+    font-size: 9px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text h1 {
+    font-size: 3rem;
+  }
+
+  .text p {
+    font-size: 1.4rem;
+    padding: 0 1rem;
+  }
+
+  .cta {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+  }
+
+  .img-front {
+    height: 35rem;
+    margin: 2rem auto 0 auto;
+    display: block;
+  }
+
+  .watch-wrapper {
+    flex: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .circle-small,
+  .circle-large {
+    display: none;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 8px;
+  }
+
+  .text h1 {
+    font-size: 2.6rem;
+  }
+
+  .img-front {
+    height: 28rem;
+  }
+
+  .cta {
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+  }
+}
+
+
+
 
 
